@@ -18,7 +18,7 @@ logging.basicConfig(
     format="%(asctime)s [%(name)s] %(levelname)s: %(message)s",
     datefmt="%H:%M:%S"
 )
-logger = logging.getLogger("lockin")
+logger = logging.getLogger("studybudy")
 
 # ─── Rate Limiter (slowapi) ───────────────────────────────────
 limiter = Limiter(key_func=get_remote_address, default_limits=["200/minute"])
@@ -27,7 +27,7 @@ limiter = Limiter(key_func=get_remote_address, default_limits=["200/minute"])
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Startup and shutdown logic."""
-    logger.info("🚀 Starting Lockin API v2.1...")
+    logger.info("🚀 Starting StudyBudy API v2.1...")
 
     # Pre-warm Supabase client
     try:
@@ -53,9 +53,9 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.warning(f"⚠️ Guest usage cleanup failed: {e}")
 
-    logger.info("🟢 Lockin API ready to serve requests")
+    logger.info("🟢 StudyBudy API ready to serve requests")
     yield  # App runs here
-    logger.info("🔴 Lockin API shutting down")
+    logger.info("🔴 StudyBudy API shutting down")
 
 
 app = FastAPI(
@@ -72,7 +72,7 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 allowed_origins = os.getenv("ALLOWED_ORIGINS", "").split(",")
 if not allowed_origins or allowed_origins == [""] or allowed_origins == ["*"]:
     allowed_origins = [
-        "https://lockin-lovat.vercel.app",
+        "https://studybudy.vercel.app",
         "http://localhost:5173",
         "http://localhost:3000",
         "http://127.0.0.1:5173",

@@ -1,6 +1,6 @@
-# Lockin
+# StudyBudy
 
-Lockin is an advanced AI-powered platform designed to optimize study sessions and presentation generation. By integrating an intuitive frontend with a robust backend, it helps users generate flashcards, summarize notes, explain code, and automatically create presentations.
+StudyBudy is an advanced AI-powered platform designed to optimize study sessions and presentation generation. By integrating an intuitive frontend with a robust backend, it helps users generate flashcards, summarize notes, explain code, and automatically create presentations.
 
 ## 🚀 Features
 
@@ -27,7 +27,7 @@ Lockin is an advanced AI-powered platform designed to optimize study sessions an
 ## 📂 Project Structure
 
 ```text
-Lockin/
+StudyBudy/
 ├── frontend/          # React + Vite frontend application
 ├── backend/           # FastAPI backend application
 ├── docs/              # Documentation, database scripts, and archive
@@ -46,7 +46,7 @@ Lockin/
 ### 1. Clone the repository
 ```bash
 git clone <your-repo-url>
-cd Lockin
+cd StudyBudy
 ```
 
 ### 2. Frontend Setup

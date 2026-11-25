@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     SUPABASE_KEY: str
     OPENAI_API_KEY: str
     SUPABASE_JWT_SECRET: Optional[str] = None
-    GUEST_JWT_SECRET: str = "lockin-guest-dev-secret-change-in-prod"
+    GUEST_JWT_SECRET: str = "studybudy-guest-dev-secret-change-in-prod"
 
     class Config:
         env_file = ".env"

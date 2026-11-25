@@ -12,7 +12,7 @@ import jwt as pyjwt
 from fastapi import APIRouter, Request
 from app.utils.config import settings
 
-logger = logging.getLogger("lockin.guest")
+logger = logging.getLogger("studybudy.guest")
 
 router = APIRouter(prefix="/api/auth", tags=["guest"])
 

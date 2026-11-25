@@ -128,7 +128,7 @@ const Sidebar = () => {
         </div>
         <div className={`flex flex-col transition-all duration-300 ${isSidebarOpen ? 'opacity-100' : 'opacity-0 w-0'}`}>
           <h1 className="font-bold text-[15px] tracking-tight text-white whitespace-nowrap leading-tight">
-            Lock<span className="text-primary">in</span>
+            Study<span className="text-primary">Budy</span>
           </h1>
           <span className="text-[9px] font-medium tracking-[0.15em] uppercase text-gray-600 leading-tight">AI Platform</span>
         </div>

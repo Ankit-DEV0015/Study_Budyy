@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 
-const GUEST_TOKEN_KEY = 'lockin_guest_token';
-const GUEST_EXPIRES_KEY = 'lockin_guest_expires';
+const GUEST_TOKEN_KEY = 'studybudy_guest_token';
+const GUEST_EXPIRES_KEY = 'studybudy_guest_expires';
 
 /**
  * Guest mode Zustand store.

@@ -1,5 +1,5 @@
 """
-Authentication & Identity dependencies for Lockin.
+Authentication & Identity dependencies for StudyBudy.
 
 Supports two identity types:
   - AuthenticatedUser: validated via Supabase RS256/HS256 JWT (existing flow)
@@ -25,7 +25,7 @@ from fastapi import Depends, HTTPException, Request, status
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from app.utils.config import settings
 
-logger = logging.getLogger("lockin.auth")
+logger = logging.getLogger("studybudy.auth")
 
 security = HTTPBearer()
 # Allow optional Bearer token (for endpoints that accept both authed and guest)
@@ -261,7 +261,7 @@ GUEST_IP_FEATURE_LIMIT = 15  # backstop for shared NAT
 
 def _hash_ip(ip: str) -> str:
     """Salted hash of request IP. No raw IP is stored."""
-    salt = "lockin-guest-ip-salt-2024"
+    salt = "studybudy-guest-ip-salt-2024"
     return hashlib.sha256(f"{salt}:{ip}".encode()).hexdigest()[:32]
 
 

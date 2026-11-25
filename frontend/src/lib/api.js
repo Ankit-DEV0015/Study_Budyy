@@ -35,7 +35,7 @@ api.interceptors.request.use(
       config.headers.Authorization = `Bearer ${_cachedToken}`;
     } else {
       // Check for guest token in sessionStorage
-      const guestToken = sessionStorage.getItem('lockin_guest_token');
+      const guestToken = sessionStorage.getItem('studybudy_guest_token');
       if (guestToken) {
         config.headers.Authorization = `Bearer ${guestToken}`;
       }

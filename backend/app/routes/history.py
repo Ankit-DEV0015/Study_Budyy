@@ -4,7 +4,7 @@ from app.utils.database import get_supabase
 from app.dependencies.auth import get_current_user
 import logging
 
-logger = logging.getLogger("lockin.history")
+logger = logging.getLogger("studybudy.history")
 
 router = APIRouter(prefix="/api/history", tags=["history"])
 

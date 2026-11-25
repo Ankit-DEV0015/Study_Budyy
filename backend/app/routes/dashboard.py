@@ -5,7 +5,7 @@ from app.dependencies.auth import get_current_user
 from cachetools import TTLCache
 import logging
 
-logger = logging.getLogger("lockin.dashboard")
+logger = logging.getLogger("studybudy.dashboard")
 
 router = APIRouter(prefix="/api/dashboard", tags=["dashboard"])
 

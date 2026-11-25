@@ -4,7 +4,7 @@ import logoIcon from '../assets/logo-icon.png';
 const LogoIcon = ({ className = "w-[18px] h-[18px]" }) => (
   <img 
     src={logoIcon} 
-    alt="Lockin Logo" 
+    alt="StudyBudy Logo" 
     className={`${className} object-contain`} 
   />
 );

@@ -5,7 +5,7 @@ import asyncio
 from dotenv import load_dotenv
 
 # Add backend directory to path
-backend_dir = r'c:\Users\ultra\Downloads\SIGMA WEB DEV\Lockin\backend'
+backend_dir = r'c:\Users\ultra\Downloads\SIGMA WEB DEV\StudyBudy\backend'
 sys.path.insert(0, backend_dir)
 
 # Load env variables

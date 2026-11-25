@@ -224,7 +224,7 @@ const Auth = () => {
 
   const getSubtitle = () => {
     switch (mode) {
-      case 'login': return 'Sign in to your Lockin account';
+      case 'login': return 'Sign in to your StudyBudy account';
       case 'signup': return 'Start your AI productivity journey';
       case 'forgot': return "Enter your email and we'll send a reset link";
       case 'reset': return 'Choose a strong new password';

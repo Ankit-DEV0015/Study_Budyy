@@ -80,7 +80,7 @@ const Dashboard = () => {
             </div>
             <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-3">
               {isGuest ? (
-                <>Welcome to <br className="hidden md:block" /><span className="gradient-text font-black">Lockin AI</span></>
+                <>Welcome to <br className="hidden md:block" /><span className="gradient-text font-black">StudyBudy AI</span></>
               ) : (
                 <>Welcome back, <br className="hidden md:block" /><span className="gradient-text font-black">{firstName}</span></>
               )}

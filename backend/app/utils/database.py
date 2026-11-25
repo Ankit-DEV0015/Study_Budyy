@@ -5,7 +5,7 @@ import uuid
 from datetime import datetime
 import logging
 
-logger = logging.getLogger("lockin.database")
+logger = logging.getLogger("studybudy.database")
 
 # ─── Cached Supabase Client ────────────────────────────────────
 # Reuse a single base client instead of calling create_client()

@@ -9,7 +9,7 @@ def safe_str(s):
     return s.encode('ascii', errors='replace').decode('ascii')
 
 def inspect():
-    path = r"C:\Users\ultra\OneDrive\Documents\SIGMA WEB DEV\Lockin\backend\output\presentation_Quantum_Computing_and_Future_Technologie.pptx"
+    path = r"C:\Users\ultra\OneDrive\Documents\SIGMA WEB DEV\StudyBudy\backend\output\presentation_Quantum_Computing_and_Future_Technologie.pptx"
     if not os.path.exists(path):
         print(f"File not found: {path}")
         return
